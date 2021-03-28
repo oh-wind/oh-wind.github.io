@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ohwind.me/categories/</loc>
+    <loc>https://blog.ohwind.me/categories/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohwind.me/posts/</loc>
+    <loc>https://blog.ohwind.me/posts/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohwind.me/categories/%E7%95%AA%E5%89%A7/</loc>
+    <loc>https://blog.ohwind.me/categories/%E7%95%AA%E5%89%A7/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohwind.me/posts/recommendation/</loc>
+    <loc>https://blog.ohwind.me/posts/recommendation/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohwind.me/</loc>
+    <loc>https://blog.ohwind.me/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohwind.me/about/</loc>
+    <loc>https://blog.ohwind.me/about/</loc>
     <lastmod>2021-03-25T16:43:26+08:00</lastmod>
   </url><url>
-    <loc>https://ohwind.me/tags/</loc>
+    <loc>https://blog.ohwind.me/tags/</loc>
   </url>
 </urlset>
