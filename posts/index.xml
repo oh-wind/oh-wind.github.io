@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 風の手札</title>
-    <link>https://oh-wind.github.io/posts/</link>
+    <link>https://ohwind.me/posts/</link>
     <description>Recent content in Posts on 風の手札</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>ohwind 2021</copyright>
-    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://oh-wind.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ohwind.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>番剧推荐</title>
-      <link>https://oh-wind.github.io/posts/recommendation/</link>
+      <link>https://ohwind.me/posts/recommendation/</link>
       <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://oh-wind.github.io/posts/recommendation/</guid>
+      <guid>https://ohwind.me/posts/recommendation/</guid>
       <description>咱在这里会放一些好(ci)看(ji)的番剧和漫画 转生成蜘蛛又怎样！
 蜘蛛子赛高! bilibili
 某科学的超电磁炮(Ⅰ,Ⅱ,Ⅲ)
