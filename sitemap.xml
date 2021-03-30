@@ -8,7 +8,16 @@
     <loc>https://blog.ohwind.me/posts/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.ohwind.me/tags/</loc>
+    <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.ohwind.me/categories/%E4%BA%8C%E6%AC%A1%E5%85%83/</loc>
+    <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ohwind.me/tags/%E6%BC%AB%E7%94%BB/</loc>
+    <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.ohwind.me/tags/%E7%95%AA%E5%89%A7/</loc>
     <lastmod>2021-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.ohwind.me/posts/recommendation/</loc>
@@ -19,7 +28,5 @@
   </url><url>
     <loc>https://blog.ohwind.me/about/</loc>
     <lastmod>2021-03-25T16:43:26+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.ohwind.me/tags/</loc>
   </url>
 </urlset>
