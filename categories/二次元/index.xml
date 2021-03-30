@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 風の手札</title>
-    <link>https://blog.ohwind.me/posts/</link>
-    <description>Recent content in Posts on 風の手札</description>
+    <title>二次元 on 風の手札</title>
+    <link>https://blog.ohwind.me/categories/%E4%BA%8C%E6%AC%A1%E5%85%83/</link>
+    <description>Recent content in 二次元 on 風の手札</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>ohwind 2021</copyright>
-    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ohwind.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ohwind.me/categories/%E4%BA%8C%E6%AC%A1%E5%85%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>番剧推荐</title>
       <link>https://blog.ohwind.me/posts/recommendation/</link>

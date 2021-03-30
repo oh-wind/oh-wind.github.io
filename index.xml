@@ -19,10 +19,11 @@
         
         <guid>https://blog.ohwind.me/posts/recommendation/</guid>
         <description>風の手札 https://blog.ohwind.me/posts/recommendation/ -&lt;h1 id=&#34;咱在这里会放一些好ci看ji的番剧和漫画&#34;&gt;咱在这里会放一些好(ci)看(ji)的番剧和漫画&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep374355&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://ftp.bmp.ovh/imgs/2021/03/5d8b749edfe3c28b.webp&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -49,7 +50,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep84340&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://ftp.bmp.ovh/imgs/2021/03/ea4bb1862d6c4eb8.webp&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -76,7 +77,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ss36167&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://blog.ohwind.me/images/img1.png&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -103,7 +104,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep341309&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://blog.ohwind.me/images/img2.png&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -130,7 +131,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep374668&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://blog.ohwind.me/images/img3.png&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -157,7 +158,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep15397&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://blog.ohwind.me/images/img4.png&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -197,13 +198,16 @@
 &lt;p&gt;喜爱的东西很多，编程游戏音乐电影以及&lt;del&gt;非常hentai的本子&lt;/del&gt;但大都是三分钟热度。唯一坚持到现在的就是编程和二次元了（&lt;/p&gt;
 &lt;p&gt;而编程更是成为了咱的工作，但兴趣一旦成了工作，就会变得枯燥乏味又讨厌了。&lt;/p&gt;
 &lt;p&gt;所以这个博客并不会仅发布技术相关的内容，还会发布一些咱的随想和手记，包括我开脑洞的时候构思的轻小说也可能会在这里写ヽ(✿ﾟ▽ﾟ)ノ。&lt;/p&gt;
+&lt;p&gt;本来想着用Rust+Vue自建博客的，但是由于咱没学过Vue，于是又埋头看了一个星期的文档，刚看完Vue的文档突然又发现了一本不错的系统开发的书，于是就跑去研究这个了&amp;hellip;&amp;hellip;然后当然就是不停的咕咕咕，连咱准备给朋友做的语音聊天也咕了（但是追的番倒是一个不落的追完了呢）。&lt;/p&gt;
+&lt;p&gt;后来终于想起来建博客这回事，于是就自己写了个前端，然后被自己丑哭（╬▔皿▔）╯。所以咱现在放弃了自己的审美直接用Hugo和它的主题了，真香啊&amp;hellip;..&lt;br&gt;
+话说我当初为什么会对自己的审美这么自信？&lt;/p&gt;
 &lt;h1 id=&#34;番剧推荐&#34;&gt;番剧推荐&lt;/h1&gt;
 &lt;p&gt;啊对了！说起来二次元，怎么能不给大家推荐一些好看的番剧呢？&lt;/p&gt;
-&lt;p&gt;下面是咱比较喜欢的一些番和漫画，但是没有本子(。・ω・。)&lt;/p&gt;
+&lt;p&gt;下面是咱比较喜欢的一些番和漫画，但是没有本子呢(。・ω・。)&lt;/p&gt;
 &lt;p&gt;&lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep374355&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://ftp.bmp.ovh/imgs/2021/03/5d8b749edfe3c28b.webp&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -230,7 +234,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep341309&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://blog.ohwind.me/images/img2.png&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
@@ -257,7 +261,7 @@
 &lt;div class=&#34;container&#34;&gt;
     &lt;div class=&#34;card-container &#34; style=&#34;width: 20rem;&#34;&gt;
         &lt;a class=&#34;text-secondary&#34; href=&#39;https://www.bilibili.com/bangumi/play/ep374668&#39; target=&#34;_blank&#34;&gt;
-            &lt;div class=&#34;card&#34; style=&#34;width: 18rem; background: none !important;&#34;&gt;
+            &lt;div class=&#34;card&#34; style=&#34;background: none !important;&#34;&gt;
                 &lt;div class=&#34;row no-gutters&#34;&gt;
                     &lt;div class=&#34;col-auto&#34;&gt;
                         &lt;img src=&#39;https://blog.ohwind.me/images/img3.png&#39; class=&#34;img-fluid &#34; style=&#34;width: 6rem;&#34;&gt;
