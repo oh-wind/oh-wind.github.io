@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on 風の手札</title><link>https://blog.ohwind.me/tags/</link><description>Recent content in Tags on 風の手札</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>ohwind 2021</copyright><lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ohwind.me/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>漫画</title><link>https://blog.ohwind.me/tags/%E6%BC%AB%E7%94%BB/</link><pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.ohwind.me/tags/%E6%BC%AB%E7%94%BB/</guid><description/></item><item><title>番剧</title><link>https://blog.ohwind.me/tags/%E7%95%AA%E5%89%A7/</link><pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.ohwind.me/tags/%E7%95%AA%E5%89%A7/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 風の手札</title>
+    <link>https://blog.ohwind.me/tags/</link>
+    <description>Recent content in Tags on 風の手札</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>ohwind 2021</copyright>
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.ohwind.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>漫画</title>
+      <link>https://blog.ohwind.me/tags/%E6%BC%AB%E7%94%BB/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ohwind.me/tags/%E6%BC%AB%E7%94%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>番剧</title>
+      <link>https://blog.ohwind.me/tags/%E7%95%AA%E5%89%A7/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ohwind.me/tags/%E7%95%AA%E5%89%A7/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
