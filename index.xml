@@ -141,6 +141,33 @@ bilibili
 &lt;/div>&lt;br>
 &lt;div class="container">
 &lt;div class="card-container " style="width: 20rem;">
+&lt;a class="text-secondary" href='https://manga.bilibili.com/detail/mc25900' target="_blank">
+&lt;div class="card" style="background: none !important;">
+&lt;div class="row no-gutters">
+&lt;div class="col-auto">
+&lt;img src='https://sm.ms/image/ZF3eJvAoPuVOpSi' class="img-fluid " style="width: 6rem;">
+&lt;/div>
+&lt;div class="col">
+&lt;div class="card-block px-2" style="margin: 0.5rem;">
+&lt;p class="card-title text-info">
+总之就是非常可爱&lt;/p>
+&lt;p class="card-text small text-secondary"> 你能娶到这么漂亮的妻子，真是羡煞旁人啊！ &lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="card-footer w-100 text-muted">
+&lt;p class="card-text small">
+&lt;a href='https://manga.bilibili.com/detail/mc25900' class="card-subtitle mb-2 text-muted">
+bilibili 漫画-畑健二郎
+&lt;/a>
+&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/a>
+&lt;/div>
+&lt;/div>&lt;br>
+&lt;div class="container">
+&lt;div class="card-container " style="width: 20rem;">
 &lt;a class="text-secondary" href='https://www.bilibili.com/bangumi/play/ep15397' target="_blank">
 &lt;div class="card" style="background: none !important;">
 &lt;div class="row no-gutters">
