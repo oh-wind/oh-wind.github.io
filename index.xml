@@ -1,4 +1,61 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>風の手札</title><link>https://blog.ohwind.me/</link><description>Recent content on 風の手札</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>ohwind 2021</copyright><lastBuildDate>Fri, 23 Apr 2021 14:37:21 +0800</lastBuildDate><atom:link href="https://blog.ohwind.me/index.xml" rel="self" type="application/rss+xml"/><item><title>英语不规则动词表</title><link>https://blog.ohwind.me/posts/english-grammar-verb/</link><pubDate>Fri, 23 Apr 2021 14:37:21 +0800</pubDate><guid>https://blog.ohwind.me/posts/english-grammar-verb/</guid><description>風の手札 https://blog.ohwind.me/posts/english-grammar-verb/ -&lt;h1 id="英语不规则动词的一般规律">英语不规则动词的一般「规律」&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>風の手札</title><link>https://blog.ohwind.me/</link><description>Recent content on 風の手札</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>ohwind 2021</copyright><lastBuildDate>Fri, 30 Jul 2021 09:53:34 +0800</lastBuildDate><atom:link href="https://blog.ohwind.me/index.xml" rel="self" type="application/rss+xml"/><item><title>【译】为什么Rust的可执行文件很大？</title><link>https://blog.ohwind.me/posts/dart-why-is-a-rust-executable-large/</link><pubDate>Fri, 30 Jul 2021 09:53:34 +0800</pubDate><guid>https://blog.ohwind.me/posts/dart-why-is-a-rust-executable-large/</guid><description>風の手札 https://blog.ohwind.me/posts/dart-why-is-a-rust-executable-large/ -&lt;blockquote>
+&lt;p>原文：&lt;a href="https://lifthrasiir.github.io/rustlog/why-is-a-rust-executable-large.html">Why is a Rust executable large?&lt;/a>&lt;br>
+由于原文没有著作权声明，故此文仅保留译文署名权。&lt;br>
+另注：这篇文章写于2016年，许多技术已然过时，此文章仅用于帮助您理解Rust可执行文件内存占用的原理以及解决思路。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>想要迅速得到收获吗？&lt;a href="#end">转到末尾。&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>假设您是一位主要使用编程语言的程序员。不知怎地，你已经厌倦了那些语言，有着多种正当的理由，并且您已经听闻了一种流行的新编程语言&lt;a href="https://rust-lang.org/">Rust&lt;/a>。看了一些博客和&lt;a href="https://users.rust-lang.org/">官方论坛&lt;/a>，您决定尝试一下它。曾经安装Rust似乎比较麻烦，但所幸我们有&lt;a href="https://rustup.rs/">rustup&lt;/a>，现在这个问题好像已经消失了。Cargo看起来很棒，所以你按照&lt;a href="https://doc.rust-lang.org/book/">本书的第一部分&lt;/a>对这个语言进行了简短的问候：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-rust" data-lang="rust">&lt;span style="color:#8b008b;font-weight:bold">fn&lt;/span> &lt;span style="color:#008b45">main&lt;/span>()&lt;span style="color:#bbb"> &lt;/span>{&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>println!(&lt;span style="color:#cd5555">&amp;#34;Hello, world!&amp;#34;&lt;/span>);&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>}&lt;span style="color:#bbb">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>令人惊讶的是，cargo运行起来毫不费力。比起来原来构建时需要配置构建脚本(build script)、Makefile、项目以及其他东西，这就像一种奇迹。可执行文件在target/debug/hello中已经可用让你印象深刻，你本能地输入ls -al(或dir？)，你简直不敢相信自己的眼睛：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">$ ls -al target/debug/hello
+-rwxrwxr-x 1 lifthrasiir 650711 May 31 20:00 target/debug/hello*
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>它打印出可执行文件高达&lt;strong>605KB&lt;/strong>？！你记得Rust可能是唯一可能取代C++的语言，而C++因其代码膨胀而著称；这是否意味着Rust没有解决C++的这个大问题？出于好奇，你用C编写了相同的程序并进行编译。结果让人大开眼界：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">$ cat hello-c.c
+#include &amp;lt;stdio.h&amp;gt;
+int main() {
+printf(&amp;#34;Hello, World!\n&amp;#34;);
+}
+$ make hello-c
+$ ls -al hello-c
+-rwxrwxr-x 1 lifthrasiir 8551 May 31 20:03 hello-c*
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>你想，也许这是C的裸机库带来的好处。这次你尝试写一个使用了iostream的C++程序，应该比C的天真的printf保险多了。但令人惊讶的是，与Rust相比它仍然显得很小：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">$ cat hello-cpp.cpp
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+int main() {
+cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl;
+}
+$ make hello-cpp
+$ ls -al hello-cpp
+-rwxrwxr-x 1 lifthrasiir 9168 May 31 20:06 hello-cpp*
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Rust出了什么问题？&lt;/p>
+&lt;hr>
+&lt;p>似乎Rust二进制文件惊人的尺寸引起了许多人极大的关注，这个问题并不新鲜。在 StackOverflow 上有一个众所周知的&lt;a href="https://stackoverflow.com/questions/29008127/why-are-rust-executables-so-huge">问题&lt;/a>，尽管已有一年之久，搜索&lt;a href="https://duckduckgo.com/?q=why+is+rust+binary+large">“why is rust binary large”&lt;/a>仍会给出更多信息。鉴于此类问题的频率，我们还没有明确的文章或页面来处理这些问题，这有点令人惊讶。所以这是我试图提供的一个。&lt;/p>
+&lt;p>只是要谨慎：首先要问这是一个有效的问题吗？我们有数百GB的储存空间，如果不是TB的话，现在的人们应该使用着不错的IPS，所以二进制大小不应该是一个问题，对吧？ &lt;br>
+答案是，它可能仍然重要（尽管不像以前那样重要）。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://www.akamai.com/us/en/resources/our-thinking/state-of-the-internet-report/global-state-of-the-internet-security-ddos-attack-reports.jsp">Akamai 互联网状况&lt;/a>显示，虽然发达国家 80% 以上的用户享受 4Mbps 或更高的速度，但发展中国家的用户却少得多。平均连接已经有了很大改善（现在几乎每个国家都超过了 1Mbps 的平均值），但整体分布仍然停滞不前。我很幸运，身处一个千兆以太网只需30美元/月的国家（！）&lt;code>（译注：？）&lt;/code>，但许多其他人可能不是这样。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>普通消费者对计算机只有浅薄的了解，他们很可能将他们遇到的任何问题与他们知道的任何东西联系起来。其中一个常见的观点是，可执行文件的臃肿导致（运行）速度减慢。这很不幸，但却是事实，你会想避免这种情绪。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>对于好奇的读者：所有的例子都是在Rust 1.9.0和1.11.0-nightly(a967611d8 2016-05-30) 中测试的，除非另有说明，使用的主要操作系统是 X86-64 上的 Linux 3.13.0 。你的情况可能会有所不同。&lt;/p>
+&lt;h2 id="优化级别">优化级别&lt;/h2>
+&lt;p>如果问及上述问题，几乎每个有经验的Rust用户都会反问你：&lt;/p>
+&lt;blockquote>
+&lt;p>你是否启用了release版本？&lt;/p>
+&lt;/blockquote>
+&lt;p>事实证明，Cargo区分了 debug build（默认）和 release build （&amp;ndash;release）。&lt;a href="https://doc.rust-lang.org/cargo/reference/manifest.html#the-profile-sections">Cargo文档&lt;/a>解释了它们之间的确切区别，总的来说，release 摆脱了仅用于开发的例程和数据，并启用了大量的优化功能。它不是默认设置，因为调试版本比发布版本更频繁地被调用。&lt;/p>
+&lt;p>请注意，Jorge Aparicio已经正确地&lt;a href="https://www.reddit.com/r/rust/comments/4m7kha/rustlog_why_is_a_rust_executable_large/d3t9yuj">指出&lt;/a>，release 版本并没有产生尽可能小的二进制文件。这是因为 release 版默认为优化级别 3 (-C opt-level=3)，这可能会为了性能而牺牲一些大小。而大小优化级别(-C opt-level=s 或 -C opt-level=z)最近已&lt;a href="https://github.com/rust-lang/rust/pull/32386">上线&lt;/a>，所以你以后可以使用它。不过现在，我们还是坚持使用默认的。&lt;/p>
+&lt;h3 id="end">end&lt;/h3>
+- https://blog.ohwind.me/posts/dart-why-is-a-rust-executable-large/ - ohwind 2021</description></item><item><title>英语不规则动词表</title><link>https://blog.ohwind.me/posts/english-grammar-verb/</link><pubDate>Fri, 23 Apr 2021 14:37:21 +0800</pubDate><guid>https://blog.ohwind.me/posts/english-grammar-verb/</guid><description>風の手札 https://blog.ohwind.me/posts/english-grammar-verb/ -&lt;h1 id="英语不规则动词的一般规律">英语不规则动词的一般「规律」&lt;/h1>
 &lt;blockquote>
 &lt;ul>
 &lt;li>此部分内容整理自英语兔的&lt;a href="https://www.yingyutu.com/bgz">这篇文章&lt;/a>，英语兔对此文保留所有权利&lt;/li>
